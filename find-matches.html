@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Matches By Your Preference - Kalyan Telugu Matrimony</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#B30D13',
+              redHover: '#8E0C1B',
+              gold: '#FDECD2',
+              goldHover: '#f3d7b0',
+              green: '#6B8C5A',
+              dark: '#2D1A1C',
+              cream: '#FCF9F6',
+            }
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-brand-dark antialiased">
+
+  <!-- ==========================================
+       SECTION 3 - FIND MATCHES BY
+       ========================================== -->
+  <section id="find-matches-by" class="py-12 md:py-16 bg-white relative border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark mb-4 font-poppins">
+          Find Matches <span class="text-brand-red">By Your Preference</span>
+        </h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto mb-6 rounded-full"></div>
+        <p class="text-slate-600 font-outfit text-xs md:text-sm">
+          Filter thousands of Telugu profiles instantly based on criteria that matter most to your family and lifestyle.
+        </p>
+      </div>
+
+      <!-- Content Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+        <!-- Interactive Tabs Grid (Left) -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+          <button data-filter="age" class="search-filter-tab p-5 rounded-2xl border-2 border-brand-red bg-brand-red/5 text-brand-red font-bold text-left flex flex-col justify-between h-32 transition-all duration-300 hover:scale-[1.02] shadow-sm">
+            <i class="fa-solid fa-cake-candles text-xl"></i>
+            <span class="text-sm md:text-base font-bold font-poppins">Age & Height</span>
+          </button>
+          
+          <button data-filter="location" class="search-filter-tab p-5 rounded-2xl border-2 border-slate-100 bg-white text-slate-700 font-bold text-left flex flex-col justify-between h-32 transition-all duration-300 hover:scale-[1.02] shadow-sm">
+            <i class="fa-solid fa-map-location-dot text-xl text-slate-400"></i>
+            <span class="text-sm md:text-base font-bold font-poppins">Location / NRI</span>
+          </button>
+
+          <button data-filter="education" class="search-filter-tab p-5 rounded-2xl border-2 border-slate-100 bg-white text-slate-700 font-bold text-left flex flex-col justify-between h-32 transition-all duration-300 hover:scale-[1.02] shadow-sm">
+            <i class="fa-solid fa-graduation-cap text-xl text-slate-400"></i>
+            <span class="text-sm md:text-base font-bold font-poppins">Education</span>
+          </button>
+
+          <button data-filter="profession" class="search-filter-tab p-5 rounded-2xl border-2 border-slate-100 bg-white text-slate-700 font-bold text-left flex flex-col justify-between h-32 transition-all duration-300 hover:scale-[1.02] shadow-sm">
+            <i class="fa-solid fa-briefcase text-xl text-slate-400"></i>
+            <span class="text-sm md:text-base font-bold font-poppins">Profession</span>
+          </button>
+
+          <button data-filter="community" class="search-filter-tab p-5 rounded-2xl border-2 border-slate-100 bg-white text-slate-700 font-bold text-left flex flex-col justify-between h-32 transition-all duration-300 hover:scale-[1.02] shadow-sm">
+            <i class="fa-solid fa-people-roof text-xl text-slate-400"></i>
+            <span class="text-sm md:text-base font-bold font-poppins">Community</span>
+          </button>
+
+          <button data-filter="lifestyle" class="search-filter-tab p-5 rounded-2xl border-2 border-slate-100 bg-white text-slate-700 font-bold text-left flex flex-col justify-between h-32 transition-all duration-300 hover:scale-[1.02] shadow-sm">
+            <i class="fa-solid fa-gem text-xl text-slate-400"></i>
+            <span class="text-sm md:text-base font-bold font-poppins">Lifestyle</span>
+          </button>
+
+          <button data-filter="family" class="search-filter-tab p-5 rounded-2xl border-2 border-slate-100 bg-white text-slate-700 font-bold text-left flex flex-col justify-between h-32 transition-all duration-300 hover:scale-[1.02] shadow-sm">
+            <i class="fa-solid fa-house-chimney-user text-xl text-slate-400"></i>
+            <span class="text-sm md:text-base font-bold font-poppins">Family Values</span>
+          </button>
+
+          <button data-filter="horoscope" class="search-filter-tab p-5 rounded-2xl border-2 border-slate-100 bg-white text-slate-700 font-bold text-left flex flex-col justify-between h-32 transition-all duration-300 hover:scale-[1.02] shadow-sm">
+            <i class="fa-solid fa-om text-xl text-slate-400"></i>
+            <span class="text-sm md:text-base font-bold font-poppins">Horoscope</span>
+          </button>
+        </div>
+
+        <!-- Animated Search Interface Preview Panel (Right) -->
+        <div class="lg:col-span-7 hidden lg:flex flex-col justify-center">
+          <div class="relative bg-white border border-slate-100 rounded-3xl p-6 md:p-8 shadow-xl overflow-hidden" id="search-preview-card">
+            
+            <div class="absolute top-0 right-0 w-24 h-24 bg-brand-gold/10 rounded-full blur-xl animate-pulse"></div>
+            <div class="absolute bottom-0 left-0 w-36 h-36 bg-brand-red/5 rounded-full blur-2xl"></div>
+
+            <!-- Desktop Gender Toggle -->
+            <div class="relative z-10 flex bg-slate-100 p-1 rounded-xl mb-6 w-full max-w-[320px] font-poppins">
+              <button id="d-tab-brides" class="flex-1 py-2 text-xs md:text-sm font-bold rounded-lg bg-white text-brand-red shadow-sm transition-all">Telugu Brides</button>
+              <button id="d-tab-grooms" class="flex-1 py-2 text-xs md:text-sm font-bold rounded-lg text-slate-500 hover:text-brand-dark transition-all">Telugu Grooms</button>
+            </div>
+
+            <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center font-poppins">
+              <!-- Portrait Image -->
+              <div class="md:col-span-5 h-64 md:h-80 w-full rounded-2xl overflow-hidden border border-brand-gold/25 relative">
+                <img src="bride1.png" alt="Featured Matrimony Profile" class="w-full h-full object-cover transition-transform duration-500" id="preview-image">
+                <div class="absolute top-3 right-3 bg-brand-dark text-white px-3 py-1 rounded-full text-[10px] font-bold flex items-center gap-1 shadow-md">
+                  <i class="fa-solid fa-circle-check"></i> Profile Verified
+                </div>
+              </div>
+
+              <!-- Profile Details -->
+              <div class="md:col-span-7 space-y-4">
+                <div class="inline-block px-3 py-1 rounded bg-brand-red/10 text-brand-red text-xs font-extrabold tracking-wider uppercase font-poppins" id="preview-match-badge">
+                  Perfect Horoscope Match
+                </div>
+                
+                <h3 class="text-2xl md:text-3xl font-extrabold text-brand-dark font-poppins" id="preview-name">Sravani Reddy, 24</h3>
+                
+                <div class="w-12 h-1 bg-brand-red rounded-full"></div>
+
+                <p class="text-sm text-slate-600 font-outfit leading-relaxed" id="preview-details">
+                  B.Tech Computer Science | Software Architect at Microsoft<br>
+                  <i class="fa-solid fa-location-dot text-brand-red mr-1"></i> Hyderabad, Telangana
+                </p>
+
+                <!-- Match Progress Bar -->
+                <div class="space-y-1.5 pt-2">
+                  <div class="flex justify-between items-center text-xs font-bold font-outfit text-slate-700">
+                    <span>Overall Match Score</span>
+                    <span class="text-brand-red" id="preview-match-pct">98%</span>
+                  </div>
+                  <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                    <div class="h-full bg-brand-red rounded-full transition-all duration-500" style="width: 98%;" id="preview-match-bar"></div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 pt-4">
+                  <button class="flex-1 py-3 px-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all duration-300 shadow-md shadow-brand-red/10 active:scale-[0.98]">
+                    Send Request
+                  </button>
+                  <button class="py-3 px-4 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 text-sm font-bold transition-all duration-300 flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-star text-brand-red"></i> Shortlist
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 7 - TELUGU CULTURE & TRADITIONS
+       ========================================== -->
+  <section id="culture-section" class="py-12 md:py-16 bg-white relative border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark mb-4 font-poppins">
+          Celebrating Telugu Values & Traditions
+        </h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto mb-6 rounded-full"></div>
+        <p class="text-slate-600 font-outfit text-xs md:text-sm">
+          Telugu marriage alliances represent the blending of two families. We honor the deep-seated customs of Telugu culture.
+        </p>
+      </div>
+
+      <!-- Grid of Blocks -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <!-- Block 1 -->
+        <div class="culture-card-item flex gap-5 p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="w-14 h-14 rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-2xl flex-shrink-0">
+            <i class="fa-solid fa-people-roof"></i>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-brand-dark font-poppins">Family Values (Kutumba Gauravam)</h3>
+            <p class="text-sm text-slate-500 leading-relaxed font-outfit">
+              We respect joint-family traditions and help you seek matches whose families align in social standing, culture, and ethics.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="culture-card-item flex gap-5 p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="w-14 h-14 rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-2xl flex-shrink-0">
+            <i class="fa-solid fa-om"></i>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-brand-dark font-poppins">Cultural Heritage (Telugu Samskruthi)</h3>
+            <p class="text-sm text-slate-500 leading-relaxed font-outfit">
+              Whether matching Gothrams or identifying specific sub-sects, our search processes respect the rich heritage of Andhra and Telangana regions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="culture-card-item flex gap-5 p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="w-14 h-14 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-2xl flex-shrink-0">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-brand-dark font-poppins">Wedding Traditions (Kalyana Mahotsavam)</h3>
+            <p class="text-sm text-slate-500 leading-relaxed font-outfit">
+              We understand the beauty of rituals like *Jeelakarra Bellam*, *Mangalasutra Dharanam*, and *Talambralu*. We are built to guide you to families celebrating the same bonds.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 4 -->
+        <div class="culture-card-item flex gap-5 p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-shadow">
+          <div class="w-14 h-14 rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-2xl flex-shrink-0">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-lg font-bold text-brand-dark font-poppins">Meaningful Relationships (Anubandham)</h3>
+            <p class="text-sm text-slate-500 leading-relaxed font-outfit">
+              Our profiles offer in-depth details of career preferences, lifestyles, and compatibility matches to build long-standing matrimonial unions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 8 - HOW IT WORKS
+       ========================================== -->
+  <section id="how-it-works" class="py-12 md:py-16 bg-[#FDECD2] relative border-t border-[#FDECD2] font-outfit">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark mb-4 font-poppins">
+          Find Your Match in <span class="text-brand-red">4 Simple Steps</span>
+        </h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto mb-6 rounded-full"></div>
+        <p class="text-slate-600 font-outfit text-xs md:text-sm">
+          Find Telugu wedding matches securely. Follow our proven and easy-to-use path.
+        </p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="relative max-w-4xl mx-auto" id="timeline-container">
+        
+        <!-- Animated Connecting Line (Vertical) -->
+        <div class="absolute left-6 md:left-1/2 top-4 bottom-4 w-1 bg-slate-200 -translate-x-1/2 z-10">
+          <div class="w-full bg-gradient-to-b from-brand-red to-brand-dark rounded-full" style="height: 0%;" id="timeline-line"></div>
+        </div>
+        
+        <!-- Step 1 -->
+        <div class="timeline-step-item relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 pb-10">
+          <div class="pl-16 md:pl-0 md:text-right flex flex-col justify-center order-2 md:order-1">
+            <span class="text-brand-red font-extrabold text-sm uppercase font-poppins tracking-widest">Step 01</span>
+            <h3 class="text-lg md:text-xl font-bold text-brand-dark mt-1 font-poppins">Create Your Profile</h3>
+            <p class="text-sm text-slate-500 mt-2 font-outfit max-w-md md:ml-auto">
+              Register free and outline your education, profession, Gothram, background, and upload photos with secure privacy controls.
+            </p>
+          </div>
+          <!-- Center Dot -->
+          <div class="absolute left-6 md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-brand-red text-white flex items-center justify-center font-bold shadow-lg shadow-brand-red/35 z-20 order-1 md:order-none timeline-dot font-poppins">
+            1
+          </div>
+          <div class="hidden md:flex items-center justify-start order-3">
+            <div class="w-16 h-16 rounded-2xl bg-white border border-brand-red/10 flex items-center justify-center text-brand-red text-3xl shadow-md">
+              <i class="fa-solid fa-user-plus"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step-item relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 pb-10">
+          <div class="hidden md:flex items-center justify-end order-1">
+            <div class="w-16 h-16 rounded-2xl bg-white border border-brand-red/10 flex items-center justify-center text-brand-dark text-3xl shadow-md">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <!-- Center Dot -->
+          <div class="absolute left-6 md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-brand-dark text-white flex items-center justify-center font-bold shadow-lg shadow-brand-dark/35 z-20 order-2 md:order-none timeline-dot font-poppins">
+            2
+          </div>
+          <div class="pl-16 md:pl-0 md:text-left flex flex-col justify-center order-3">
+            <span class="text-brand-red font-extrabold text-sm uppercase font-poppins tracking-widest">Step 02</span>
+            <h3 class="text-lg md:text-xl font-bold text-brand-dark mt-1 font-poppins">Discover Compatible Matches</h3>
+            <p class="text-sm text-slate-500 mt-2 font-outfit max-w-md">
+              Refine matches using interactive search criteria like horoscope, community, location, and educational status.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step-item relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 pb-10">
+          <div class="pl-16 md:pl-0 md:text-right flex flex-col justify-center order-2 md:order-1">
+            <span class="text-brand-red font-extrabold text-sm uppercase font-poppins tracking-widest">Step 03</span>
+            <h3 class="text-lg md:text-xl font-bold text-brand-dark mt-1 font-poppins">Connect Securely</h3>
+            <p class="text-sm text-slate-500 mt-2 font-outfit max-w-md md:ml-auto">
+              Initiate connection requests, chat, and call matching profiles securely. Share contact numbers only when ready.
+            </p>
+          </div>
+          <!-- Center Dot -->
+          <div class="absolute left-6 md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-brand-red text-white flex items-center justify-center font-bold shadow-lg shadow-brand-red/35 z-20 order-1 md:order-none timeline-dot font-poppins">
+            3
+          </div>
+          <div class="hidden md:flex items-center justify-start order-3">
+            <div class="w-16 h-16 rounded-2xl bg-white border border-brand-red/10 flex items-center justify-center text-brand-dark text-3xl shadow-md">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-step-item relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+          <div class="hidden md:flex items-center justify-end order-1">
+            <div class="w-16 h-16 rounded-2xl bg-white border border-brand-red/10 flex items-center justify-center text-brand-red text-3xl shadow-md">
+              <i class="fa-solid fa-hand-holding-heart animate-heartbeat"></i>
+            </div>
+          </div>
+          <!-- Center Dot -->
+          <div class="absolute left-6 md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-brand-red text-white flex items-center justify-center font-bold shadow-lg shadow-brand-red/35 z-20 order-2 md:order-none timeline-dot font-poppins">
+            4
+          </div>
+          <div class="pl-16 md:pl-0 md:text-left flex flex-col justify-center order-3">
+            <span class="text-brand-red font-extrabold text-sm uppercase font-poppins tracking-widest">Step 04</span>
+            <h3 class="text-lg md:text-xl font-bold text-brand-dark mt-1 font-poppins">Begin Your Journey Together</h3>
+            <p class="text-sm text-slate-500 mt-2 font-outfit max-w-md">
+              Engage families, organize matches, coordinate horoscope reviews, and begin your lifelong Telugu marriage journey together.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>

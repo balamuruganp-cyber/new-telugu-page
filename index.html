@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalyan Telugu Matrimony - Find Premium Telugu Brides & Grooms</title>
+  
+  <!-- SEO Optimization Meta Tags -->
+  <meta name="description" content="Kalyan Matrimony is the premier Telugu matchmaking service for finding verified Telugu brides and grooms. Find your perfect Telugu life partner, connect with verified Telugu speaking brides and grooms from Reddy, Kamma, Kapu, Velama, Naidu, Balija, Arya Vysya, Mudiraj, and Yadava communities. Register free for secure Telugu marriage alliances.">
+  <meta name="keywords" content="Telugu Brides, Telugu Grooms, Telugu Marriage, Telugu Matchmaking, Telugu Marriage Alliance, Telugu Speaking Brides, Telugu Speaking Grooms, Telugu Wedding Matches, Kalyan Matrimony Telugu">
+  <link rel="canonical" href="https://www.kalyanmatrimony.com/telugu">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#B30D13',
+              redHover: '#8E0C1B',
+            gold: '#FDECD2',
+              goldHover: '#f3d7b0',
+            peach: '#FDECD2',
+              green: '#6B8C5A',
+              greenHover: '#567347',
+              dark: '#2D1A1C',
+              cream: '#FCF9F6',
+              light: 'rgba(249, 230, 204, 0.08)',
+              roseLight: '#FFF2F3',
+              goldLight: '#FDFBF7'
+            }
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          animation: {
+            'marquee': 'marquee 30s linear infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-brand-dark antialiased">
+
+  <!-- ==========================================
+       HEADER
+       ========================================== -->
+  <header class="fixed top-0 left-0 w-full z-50 transition-all duration-500 py-4 px-4 md:px-12 flex items-center justify-between bg-white shadow-sm border-b border-slate-100">
+    <!-- Header Left (Logos) -->
+    <div class="flex items-center gap-3 md:gap-5">
+      <a href="#" class="flex items-center" id="header-logo-main">
+        <img src="logo.png" alt="Kalyan Matrimony Logo" class="h-10 md:h-14 w-auto object-contain">
+      </a>
+      <div class="h-8 w-[1px] bg-brand-dark/20 hidden sm:block"></div>
+      <div class="co-brand-container hidden sm:block">
+        <img src="kalyan_jewellers_logo.png" alt="Kalyan Jewellers Co-brand" class="h-9 md:h-12 w-auto object-contain">
+      </div>
+    </div>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-semibold tracking-wide font-poppins">
+      <a href="#" class="hover:text-brand-red transition-colors duration-300 text-brand-red">Home</a>
+      <a href="#brides-section" class="hover:text-brand-red transition-colors duration-300 text-brand-dark">Telugu Brides</a>
+      <a href="#grooms-section" class="hover:text-brand-red transition-colors duration-300 text-brand-dark">Telugu Grooms</a>
+      <a href="#success-section" class="hover:text-brand-red transition-colors duration-300 text-brand-dark">Success Stories</a>
+      <a href="#faq-section" class="hover:text-brand-red transition-colors duration-300 text-brand-dark">Help Center</a>
+    </nav>
+
+    <!-- Header Right (CTAs) -->
+    <div class="hidden sm:flex items-center gap-3 md:gap-4 font-poppins">
+      <button class="px-5 py-2.5 rounded-full border border-brand-red text-brand-red hover:bg-brand-red hover:text-white transition-all duration-300 text-sm font-bold">
+        Login
+      </button>
+      <button class="px-6 py-2.5 rounded-full bg-brand-red text-white hover:bg-brand-redHover transition-all duration-300 text-sm font-bold shadow-lg shadow-brand-red/25 hover:shadow-brand-red/40 active:scale-95 animate-pulse-gold">
+        Register Free
+      </button>
+    </div>
+
+    <!-- Mobile Hamburger Menu Button -->
+    <button class="lg:hidden flex items-center justify-center w-10 h-10 rounded-full bg-white/80 shadow-md border border-brand-red/10 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars-staggered text-brand-red text-xl"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay Backdrop -->
+  <div class="fixed inset-0 bg-brand-dark z-40 hidden opacity-0 transition-opacity duration-300" id="menu-backdrop"></div>
+
+  <!-- Mobile Slide Drawer -->
+  <div class="fixed top-0 right-0 w-80 h-full bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-500 ease-out flex flex-col p-6" id="mobile-menu-drawer">
+    <div class="flex items-center justify-between pb-6 border-b border-brand-dark/10">
+      <img src="logo.png" alt="Kalyan Matrimony Logo" class="h-10 object-contain">
+      <button class="w-8 h-8 rounded-full flex items-center justify-center bg-brand-cream text-brand-red hover:bg-brand-red hover:text-white transition-all duration-300" id="close-menu-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+    
+    <nav class="flex flex-col gap-5 py-8 text-base font-bold text-slate-800 font-poppins">
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg bg-brand-roseLight text-brand-red"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#brides-section" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-cream transition-colors"><i class="fa-solid fa-person-dress"></i> Telugu Brides</a>
+      <a href="#grooms-section" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-cream transition-colors"><i class="fa-solid fa-user-tie"></i> Telugu Grooms</a>
+      <a href="#success-section" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-cream transition-colors"><i class="fa-solid fa-heart"></i> Success Stories</a>
+      <a href="#faq-section" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-brand-cream transition-colors"><i class="fa-solid fa-circle-question"></i> Help Center</a>
+    </nav>
+    
+    <div class="mt-auto flex flex-col gap-3 pt-6 border-t border-brand-dark/10 font-poppins">
+      <button class="w-full py-3 rounded-full border border-brand-red text-brand-red hover:bg-brand-red hover:text-white transition-all duration-300 font-bold">
+        Login
+      </button>
+      <button class="w-full py-3 rounded-full bg-brand-red text-white hover:bg-brand-redHover transition-all duration-300 font-bold shadow-lg shadow-brand-red/25">
+        Register Free
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       HERO SECTION (Gold Background #f9e6cc)
+       ========================================== -->
+  <section id="hero-section" class="relative pt-28 pb-16 md:pt-32 md:pb-20 overflow-hidden hero-custom-bg min-h-screen flex items-center">
+    
+    <!-- Mango Leaf Toran -->
+    <div class="absolute top-[72px] left-0 w-full h-5 toran-border z-20 pointer-events-none opacity-30"></div>
+    
+    <!-- Couple Background Image Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="hero_couple.jpg" alt="Telugu Couple Background" class="w-full h-full object-cover object-center opacity-20">
+      <img src="hero_couple.jpg" alt="Telugu Couple Background" class="w-full h-full object-cover object-center opacity-30">
+      <!-- Gradient overlay to keep text/form highly readable while keeping couple visible -->
+      <div class="absolute inset-0 bg-gradient-to-r from-[#FDECD2]/90 via-[#FDECD2]/30 to-[#FDECD2]/90"></div>
+    </div>
+    
+    <!-- Dynamic particle emission container -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-10" id="hero-particles"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Left Column: Text & Trust Badges -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-red/10 border border-brand-red/25 text-brand-red text-xs md:text-sm font-extrabold tracking-wide uppercase">
+            <i class="fa-solid fa-star-of-david animate-spin text-xs"></i> 100% Verified Matches
+          </div>
+          
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-dark leading-tight font-poppins">
+            Connect with Verified <br class="hidden md:inline">
+            <span class="text-brand-red">Telugu Brides & Grooms</span>
+          </h1>
+          
+          <!-- Search Count Social Proof -->
+          <div class="flex items-center justify-center lg:justify-start gap-2 text-slate-800 font-extrabold text-xs md:text-sm font-poppins">
+            <i class="fa-solid fa-users-viewfinder animate-pulse text-brand-red text-base md:text-lg"></i>
+            <span>Join <span class="text-brand-red">1,000,000+</span> Telugu Brides & Grooms Searching for a Life Partner</span>
+          </div>
+          
+          <p class="text-sm md:text-base text-slate-900 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-outfit font-medium">
+            Connect with verified Telugu brides and grooms who share your language, traditions, family values, and life goals. Start your secure Telugu marriage journey today.
+          </p>
+          
+          <!-- Trust Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 md:gap-6 pt-8 border-t border-brand-dark/15">
+            <div class="space-y-1">
+              <div class="text-2xl md:text-3xl font-extrabold text-brand-red">1M+</div>
+              <div class="text-xs font-semibold text-slate-800 uppercase tracking-wider">Verified Profiles</div>
+            </div>
+            <div class="space-y-1">
+              <div class="text-2xl md:text-3xl font-extrabold text-brand-dark">100K+</div>
+              <div class="text-xs font-semibold text-slate-800 uppercase tracking-wider">Success Stories</div>
+            </div>
+            <div class="space-y-1 flex flex-col justify-start">
+              <div class="text-brand-red text-2xl md:text-3xl font-extrabold"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <div class="text-xs font-semibold text-slate-800 uppercase tracking-wider">Verified Mobiles</div>
+            </div>
+            <div class="space-y-1 flex flex-col justify-start">
+              <div class="text-brand-green text-2xl md:text-3xl font-extrabold"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="text-xs font-semibold text-slate-800 uppercase tracking-wider">Secure & Private</div>
+            </div>
+            <div class="space-y-1 flex flex-col justify-start">
+              <div class="text-brand-red text-2xl md:text-3xl font-extrabold"><i class="fa-solid fa-people-roof"></i></div>
+              <div class="text-xs font-semibold text-slate-800 uppercase tracking-wider">Trusted by Families</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Matrimonial Search & Filter Registration Form -->
+        <div class="lg:col-span-5 flex justify-center w-full relative">
+          
+          <!-- Floating Card 1: Verified Bride -->
+          <div class="absolute -top-6 -left-8 md:-left-12 bg-white/90 backdrop-blur-md border border-white/80 p-3 rounded-2xl shadow-xl z-20 animate-float hidden sm:flex items-center gap-2.5 max-w-[180px] hover:scale-105 transition-transform">
+            <div class="w-10 h-10 rounded-full overflow-hidden border border-brand-green/30 flex-shrink-0">
+              <img src="bride1.png" class="w-full h-full object-cover">
+            </div>
+            <div class="text-[10px] font-outfit text-left">
+              <span class="block font-extrabold text-brand-dark">Swetha R., 24</span>
+              <span class="text-brand-dark font-bold flex items-center gap-0.5"><i class="fa-solid fa-circle-check text-[9px]"></i> Verified Bride</span>
+            </div>
+          </div>
+
+          <!-- Floating Card 2: Verified Groom -->
+          <div class="absolute -bottom-6 -right-8 md:-right-12 bg-white/90 backdrop-blur-md border border-white/80 p-3 rounded-2xl shadow-xl z-20 animate-float-slow hidden sm:flex items-center gap-2.5 max-w-[180px] hover:scale-105 transition-transform">
+            <div class="w-10 h-10 rounded-full overflow-hidden border border-brand-green/30 flex-shrink-0">
+              <img src="groom1.png" class="w-full h-full object-cover">
+            </div>
+            <div class="text-[10px] font-outfit text-left">
+              <span class="block font-extrabold text-brand-dark">Siddharth R., 28</span>
+              <span class="text-brand-dark font-bold flex items-center gap-0.5"><i class="fa-solid fa-circle-check text-[9px]"></i> Verified Groom</span>
+            </div>
+          </div>
+
+          <!-- Floating Card 3: Match Badge -->
+          <div class="absolute top-1/2 -right-16 md:-right-20 -translate-y-1/2 bg-white/90 backdrop-blur-md border border-white/80 p-3 rounded-2xl shadow-xl z-20 animate-float hidden md:flex flex-col gap-1 items-center max-w-[100px] hover:scale-105 transition-transform">
+            <div class="w-9 h-9 rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-xs font-extrabold border border-brand-red/20">
+              95%
+            </div>
+            <span class="text-[9px] text-slate-500 font-extrabold uppercase tracking-wider text-center">Match Score</span>
+          </div>
+
+          <form class="glass-card rounded-3xl p-6 md:p-8 shadow-2xl border border-white/60 w-full max-w-[500px] space-y-4 relative z-10">
+            <div class="absolute -top-12 -right-12 w-24 h-24 bg-brand-gold/10 rounded-full blur-xl pointer-events-none"></div>
+            
+            <h3 class="text-xl md:text-2xl font-bold text-brand-dark text-center font-poppins">Find Matches Free</h3>
+            <p class="text-xs text-slate-500 font-outfit text-center -mt-2">Enter your preferences to search matching profiles</p>
+            
+            <div class="space-y-4 font-outfit text-sm">
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-500 mb-1">Looking for</label>
+                  <select class="w-full h-11 px-3 bg-white border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium">
+                    <option>Bride (Female)</option>
+                    <option selected>Groom (Male)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-500 mb-1">Age Range</label>
+                  <select class="w-full h-11 px-3 bg-white border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium">
+                    <option>18 - 25 Yrs</option>
+                    <option selected>21 - 28 Yrs</option>
+                    <option>25 - 32 Yrs</option>
+                    <option>30 - 40 Yrs</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-500 mb-1">Community</label>
+                  <select class="w-full h-11 px-3 bg-white border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium" required>
+                    <option value="" disabled selected>Select Community</option>
+                    <option>Reddy</option>
+                    <option>Kamma</option>
+                    <option>Kapu</option>
+                    <option>Velama</option>
+                    <option>Naidu</option>
+                    <option>Balija</option>
+                    <option>Arya Vysya</option>
+                    <option>Mudiraj</option>
+                    <option>Yadava</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-500 mb-1">Mother Tongue</label>
+                  <select class="w-full h-11 px-3 bg-white border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium">
+                    <option selected>Telugu</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div>
+                <label class="block text-xs font-bold text-slate-500 mb-1">Full Name</label>
+                <input type="text" placeholder="Enter full name" class="w-full h-11 px-4 bg-white border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium">
+              </div>
+              
+              <div>
+                <label class="block text-xs font-bold text-slate-500 mb-1">Mobile Number</label>
+                <div class="flex">
+                  <select class="h-11 px-2.5 bg-slate-50 border border-slate-200 rounded-l-xl border-r-0 focus:border-brand-red outline-none text-xs text-brand-dark font-medium">
+                    <option selected>+91 (IN)</option>
+                    <option>+1 (US)</option>
+                    <option>+44 (UK)</option>
+                  </select>
+                  <input type="tel" placeholder="10-Digit Mobile number" class="w-full h-11 px-4 bg-white border border-slate-200 rounded-r-xl focus:border-brand-red outline-none text-brand-dark font-medium">
+                </div>
+              </div>
+              
+              <button type="submit" class="w-full h-12 bg-brand-red hover:bg-brand-redHover text-white font-extrabold rounded-full transition-all shadow-lg shadow-brand-red/20 flex items-center justify-center gap-2 mt-2">
+                <i class="fa-solid fa-heart text-white text-base animate-pulse"></i> Start Finding Matches
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 2 - CTA (White Background)
+       ========================================== -->
+  <section id="final-cta-section" class="py-16 md:py-20 relative overflow-hidden bg-white border-t border-slate-100 text-brand-dark text-center">
+    <!-- Traditional repeating pattern wall and overlay gradients -->
+    <div class="absolute inset-0 opacity-10 bg-repeat bg-center mix-blend-overlay" style="background-image: url('pattern_bg.png'); background-size: 300px;"></div>
+    
+    <!-- Floating particles elements -->
+    <div class="absolute inset-0 pointer-events-none opacity-50 flex items-center justify-center">
+      <div class="text-brand-red text-4xl animate-bounce absolute top-10 left-12"><i class="fa-solid fa-heart opacity-25"></i></div>
+      <div class="text-brand-red text-3xl animate-float-slow absolute bottom-10 right-16"><i class="fa-solid fa-heart opacity-30"></i></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-8">
+      <div class="inline-flex w-16 h-16 rounded-full bg-brand-red/10 border border-brand-red/25 items-center justify-center text-brand-red text-3xl animate-pulse">
+        <i class="fa-solid fa-spa text-base animate-spin-slow text-brand-red"></i>
+      </div>
+      
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight font-poppins">
+        Start Your Journey Towards a <br class="hidden md:inline">
+        <span class="text-brand-red">Meaningful Relationship</span>
+      </h2>
+      
+      <p class="text-slate-900 font-outfit text-sm md:text-base max-w-2xl mx-auto font-medium">
+        Join thousands of verified Telugu brides and grooms searching for matching life partners. Start your secure path today.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 max-w-md mx-auto font-poppins">
+        <a href="#register" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-red hover:bg-brand-redHover text-white font-extrabold text-base transition-all duration-300 shadow-xl shadow-brand-red/20 active:scale-95 text-center">
+          Register Free
+        </a>
+        <a href="#find-matches-by" class="w-full sm:w-auto px-8 py-4 rounded-full border border-brand-dark hover:bg-brand-dark hover:text-white text-brand-dark font-extrabold text-base transition-all duration-300 active:scale-95 text-center">
+          View Profiles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 2 - EXPLORE TELUGU COMMUNITIES
+       ========================================== -->
+  <section id="communities-section" class="py-12 md:py-16 relative overflow-hidden bg-white">
+    <!-- Repeating traditional background patterns -->
+    <div class="absolute inset-0 opacity-[0.02] bg-repeat bg-center mix-blend-overlay pointer-events-none" style="background-image: url('hero_pattern.png'); background-size: 165px;"></div>
+    
+    <!-- Soft floating decorative shapes (no dark colors) -->
+    <div class="absolute -top-12 -left-12 w-36 h-36 bg-brand-gold/5 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-brand-gold/8 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+      <!-- Section Title & Badges -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-brand-red/10 border border-brand-red/25 text-brand-red text-xs md:text-sm font-extrabold uppercase tracking-widest font-poppins">
+          ✨ Trusted Telugu Communities
+        </div>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark leading-tight font-poppins">
+          Find Your Match Within the Telugu Community
+        </h2>
+        <p class="text-slate-600 font-outfit text-xs md:text-sm leading-relaxed">
+          Explore verified Telugu brides and grooms from leading Telugu-speaking communities and connect with families who share your traditions, values, and cultural background.
+        </p>
+      </div>
+
+      <!-- Communities Grid - 8 items, 4 cols desktop, 2 cols tablet, 1 col mobile -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- CARD 1: Brahmin -->
+        <a href="/brahmin" class="community-card group flex flex-col min-h-[280px] h-full p-6 rounded-[24px] bg-white/80 backdrop-blur-md border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300 relative overflow-hidden">
+          <i class="fa-solid fa-om absolute -top-4 -right-4 text-[140px] opacity-[0.03] text-brand-dark pointer-events-none transition-transform duration-500 group-hover:scale-110"></i>
+          <div class="w-[60px] h-[60px] rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-3xl shadow-sm group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all duration-300 mb-5">
+            🕉️
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-2.5 font-poppins">Brahmin</h3>
+          <p class="text-sm text-slate-500 font-outfit leading-relaxed mb-6 flex-grow">
+            Connect with Brahmin brides and grooms who value tradition, culture, education, and family values.
+          </p>
+          <span class="text-xs font-bold text-brand-red group-hover:underline flex items-center gap-1 font-poppins mt-auto">
+            View Community <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform duration-300"></i>
+          </span>
+        </a>
+
+        <!-- CARD 2: Reddy -->
+        <a href="/reddy" class="community-card group flex flex-col min-h-[280px] h-full p-6 rounded-[24px] bg-white/80 backdrop-blur-md border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300 relative overflow-hidden">
+          <i class="fa-solid fa-crown absolute -top-4 -right-4 text-[140px] opacity-[0.03] text-brand-dark pointer-events-none transition-transform duration-500 group-hover:scale-110"></i>
+          <div class="w-[60px] h-[60px] rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-3xl shadow-sm group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all duration-300 mb-5">
+            👑
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-2.5 font-poppins">Reddy</h3>
+          <p class="text-sm text-slate-500 font-outfit leading-relaxed mb-6 flex-grow">
+            Explore verified Reddy bride and groom profiles from respected Telugu-speaking families.
+          </p>
+          <span class="text-xs font-bold text-brand-red group-hover:underline flex items-center gap-1 font-poppins mt-auto">
+            View Community <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform duration-300"></i>
+          </span>
+        </a>
+
+        <!-- CARD 3: Kamma -->
+        <a href="/kamma" class="community-card group flex flex-col min-h-[280px] h-full p-6 rounded-[24px] bg-white/80 backdrop-blur-md border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300 relative overflow-hidden">
+          <i class="fa-solid fa-vihara absolute -top-4 -right-4 text-[140px] opacity-[0.03] text-brand-dark pointer-events-none transition-transform duration-500 group-hover:scale-110"></i>
+          <div class="w-[60px] h-[60px] rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-3xl shadow-sm group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all duration-300 mb-5">
+            🏛️
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-2.5 font-poppins">Kamma</h3>
+          <p class="text-sm text-slate-500 font-outfit leading-relaxed mb-6 flex-grow">
+            Discover Kamma brides and grooms seeking compatible relationships built on shared aspirations.
+          </p>
+          <span class="text-xs font-bold text-brand-red group-hover:underline flex items-center gap-1 font-poppins mt-auto">
+            View Community <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform duration-300"></i>
+          </span>
+        </a>
+
+        <!-- CARD 4: Kapu -->
+        <a href="/kapu" class="community-card group flex flex-col min-h-[280px] h-full p-6 rounded-[24px] bg-white/80 backdrop-blur-md border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300 relative overflow-hidden">
+          <i class="fa-solid fa-wheat-awn absolute -top-4 -right-4 text-[140px] opacity-[0.03] text-brand-dark pointer-events-none transition-transform duration-500 group-hover:scale-110"></i>
+          <div class="w-[60px] h-[60px] rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-3xl shadow-sm group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all duration-300 mb-5">
+            🌾
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-2.5 font-poppins">Kapu</h3>
+          <p class="text-sm text-slate-500 font-outfit leading-relaxed mb-6 flex-grow">
+            Find Kapu bride and groom profiles and connect with individuals looking for meaningful partnerships.
+          </p>
+          <span class="text-xs font-bold text-brand-red group-hover:underline flex items-center gap-1 font-poppins mt-auto">
+            View Community <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform duration-300"></i>
+          </span>
+        </a>
+
+        <!-- CARD 5: Arya Vysya -->
+        <a href="/arya-vysya" class="community-card group flex flex-col min-h-[280px] h-full p-6 rounded-[24px] bg-white/80 backdrop-blur-md border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300 relative overflow-hidden">
+          <i class="fa-solid fa-gem absolute -top-4 -right-4 text-[140px] opacity-[0.03] text-brand-dark pointer-events-none transition-transform duration-500 group-hover:scale-110"></i>
+          <div class="w-[60px] h-[60px] rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-3xl shadow-sm group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all duration-300 mb-5">
+            💎
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-2.5 font-poppins">Arya Vysya</h3>
+          <p class="text-sm text-slate-500 font-outfit leading-relaxed mb-6 flex-grow">
+            Meet Arya Vysya brides and grooms who share similar cultural values, traditions, and family backgrounds.
+          </p>
+          <span class="text-xs font-bold text-brand-red group-hover:underline flex items-center gap-1 font-poppins mt-auto">
+            View Community <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform duration-300"></i>
+          </span>
+        </a>
+
+        <!-- CARD 6: Balija -->
+        <a href="/balija" class="community-card group flex flex-col min-h-[280px] h-full p-6 rounded-[24px] bg-white/80 backdrop-blur-md border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300 relative overflow-hidden">
+          <i class="fa-solid fa-handshake absolute -top-4 -right-4 text-[140px] opacity-[0.03] text-brand-dark pointer-events-none transition-transform duration-500 group-hover:scale-110"></i>
+          <div class="w-[60px] h-[60px] rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-3xl shadow-sm group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all duration-300 mb-5">
+            🤝
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-2.5 font-poppins">Balija</h3>
+          <p class="text-sm text-slate-500 font-outfit leading-relaxed mb-6 flex-grow">
+            Explore verified Balija profiles and connect with compatible matches from trusted Telugu families.
+          </p>
+          <span class="text-xs font-bold text-brand-red group-hover:underline flex items-center gap-1 font-poppins mt-auto">
+            View Community <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform duration-300"></i>
+          </span>
+        </a>
+
+        <!-- CARD 7: Naidu -->
+        <a href="/naidu" class="community-card group flex flex-col min-h-[280px] h-full p-6 rounded-[24px] bg-white/80 backdrop-blur-md border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300 relative overflow-hidden">
+          <i class="fa-solid fa-bullseye absolute -top-4 -right-4 text-[140px] opacity-[0.03] text-brand-dark pointer-events-none transition-transform duration-500 group-hover:scale-110"></i>
+          <div class="w-[60px] h-[60px] rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-3xl shadow-sm group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all duration-300 mb-5">
+            🏹
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-2.5 font-poppins">Naidu</h3>
+          <p class="text-sm text-slate-500 font-outfit leading-relaxed mb-6 flex-grow">
+            Discover Naidu brides and grooms seeking serious relationships and marriage within the community.
+          </p>
+          <span class="text-xs font-bold text-brand-red group-hover:underline flex items-center gap-1 font-poppins mt-auto">
+            View Community <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform duration-300"></i>
+          </span>
+        </a>
+
+        <!-- CARD 8: Yadav -->
+        <a href="/yadav" class="community-card group flex flex-col min-h-[280px] h-full p-6 rounded-[24px] bg-white/80 backdrop-blur-md border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-gold/10 transition-all duration-300 relative overflow-hidden">
+          <i class="fa-solid fa-leaf absolute -top-4 -right-4 text-[140px] opacity-[0.03] text-brand-dark pointer-events-none transition-transform duration-500 group-hover:scale-110"></i>
+          <div class="w-[60px] h-[60px] rounded-full bg-brand-red/10 text-brand-red flex items-center justify-center text-3xl shadow-sm group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all duration-300 mb-5">
+            🌿
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark group-hover:text-brand-red transition-colors mb-2.5 font-poppins">Yadav</h3>
+          <p class="text-sm text-slate-500 font-outfit leading-relaxed mb-6 flex-grow">
+            Connect with Yadav brides and grooms who value family traditions, compatibility, and commitment.
+          </p>
+          <span class="text-xs font-bold text-brand-red group-hover:underline flex items-center gap-1 font-poppins mt-auto">
+            View Community <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-2 transition-transform duration-300"></i>
+          </span>
+        </a>
+
+      </div>
+
+      <!-- Bottom of Section: Why Community-Based Matching? -->
+      <div class="mt-12 pt-8 border-t border-brand-gold/25 text-center space-y-6">
+        <h4 class="text-lg font-bold text-brand-dark font-poppins">Why Community-Based Matching?</h4>
+        <div class="relative w-full overflow-hidden py-2">
+          <div class="absolute inset-y-0 left-0 w-12 md:w-24 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+          <div class="absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+          
+          <div class="flex w-max animate-marquee hover:[animation-play-state:paused]">
+            <!-- Group 1 -->
+            <div class="flex items-center gap-6 md:gap-10 pr-6 md:pr-10 text-xs sm:text-sm font-bold text-slate-700 font-outfit">
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Shared Traditions</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Similar Family Values</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Cultural Compatibility</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Meaningful Connections</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Trusted Profiles</span>
+              </div>
+            </div>
+            <!-- Group 2 -->
+            <div class="flex items-center gap-6 md:gap-10 pr-6 md:pr-10 text-xs sm:text-sm font-bold text-slate-700 font-outfit">
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Shared Traditions</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Similar Family Values</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Cultural Compatibility</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Meaningful Connections</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Trusted Profiles</span>
+              </div>
+            </div>
+            <!-- Group 3 -->
+            <div class="flex items-center gap-6 md:gap-10 pr-6 md:pr-10 text-xs sm:text-sm font-bold text-slate-700 font-outfit">
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Shared Traditions</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Similar Family Values</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Cultural Compatibility</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Meaningful Connections</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Trusted Profiles</span>
+              </div>
+            </div>
+            <!-- Group 4 -->
+            <div class="flex items-center gap-6 md:gap-10 pr-6 md:pr-10 text-xs sm:text-sm font-bold text-slate-700 font-outfit">
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Shared Traditions</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Similar Family Values</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Cultural Compatibility</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Meaningful Connections</span>
+              </div>
+              <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark/5 border border-brand-dark/20 whitespace-nowrap">
+                <span class="text-brand-dark text-sm"><i class="fa-solid fa-circle-check"></i></span>
+                <span>Trusted Profiles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 3 - WHY TELUGU FAMILIES CHOOSE US
+       ========================================== -->
+  <section id="why-choose-section" class="py-12 md:py-16 bg-[#FDECD2] relative overflow-hidden">
+    <!-- Decorative background elements for glassmorphism effect -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-gold/20 rounded-full blur-3xl z-0 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl z-0 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-10 space-y-4">
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-brand-red/10 border border-brand-red/25 text-brand-red text-xs md:text-sm font-extrabold uppercase tracking-widest font-poppins">
+          ✨ Why Choose Us
+        </div>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark leading-tight font-poppins">
+          Why Telugu Families Choose Us
+        </h2>
+        <p class="text-slate-600 font-outfit text-xs md:text-sm leading-relaxed">
+          A trusted platform designed to help Telugu brides and grooms connect through shared values, traditions, and meaningful relationships.
+        </p>
+      </div>
+
+      <!-- 4 Premium Cards Slider/Grid -->
+      <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-6 px-1 lg:overflow-visible lg:grid lg:grid-cols-4 lg:gap-6 items-stretch">
+        <!-- Card 1 -->
+        <div class="snap-center w-[280px] md:w-[320px] lg:w-auto flex-shrink-0 lg:flex-shrink group p-8 rounded-[24px] bg-white/70 backdrop-blur-xl border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-gold/15 transition-all duration-500 flex flex-col items-start gap-5 h-full relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 text-brand-dark/5 text-9xl group-hover:scale-110 transition-transform duration-700 pointer-events-none">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="w-16 h-16 rounded-2xl bg-brand-red/10 flex items-center justify-center text-brand-red text-3xl transition-all duration-300 group-hover:scale-110 shadow-sm relative z-10">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark font-poppins relative z-10">Privacy Protected</h3>
+          <p class="text-slate-500 text-sm leading-relaxed font-outfit relative z-10">
+            Your personal information stays secure with advanced privacy controls and safe communication features.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="snap-center w-[280px] md:w-[320px] lg:w-auto flex-shrink-0 lg:flex-shrink group p-8 rounded-[24px] bg-white/70 backdrop-blur-xl border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-gold/15 transition-all duration-500 flex flex-col items-start gap-5 h-full relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 text-brand-dark/5 text-9xl group-hover:scale-110 transition-transform duration-700 pointer-events-none">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <div class="w-16 h-16 rounded-2xl bg-brand-dark/10 flex items-center justify-center text-brand-dark text-3xl transition-all duration-300 group-hover:scale-110 shadow-sm relative z-10">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark font-poppins relative z-10">Verified Profiles</h3>
+          <p class="text-slate-500 text-sm leading-relaxed font-outfit relative z-10">
+            Connect with genuine Telugu brides and grooms through carefully verified profiles and trusted registrations.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="snap-center w-[280px] md:w-[320px] lg:w-auto flex-shrink-0 lg:flex-shrink group p-8 rounded-[24px] bg-white/70 backdrop-blur-xl border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-gold/15 transition-all duration-500 flex flex-col items-start gap-5 h-full relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 text-brand-dark/5 text-9xl group-hover:scale-110 transition-transform duration-700 pointer-events-none">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="w-16 h-16 rounded-2xl bg-brand-red/10 flex items-center justify-center text-brand-red text-3xl transition-all duration-300 group-hover:scale-110 shadow-sm relative z-10">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark font-poppins relative z-10">Community-Based Matching</h3>
+          <p class="text-slate-500 text-sm leading-relaxed font-outfit relative z-10">
+            Find compatible matches who share similar traditions, family values, and cultural backgrounds.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="snap-center w-[280px] md:w-[320px] lg:w-auto flex-shrink-0 lg:flex-shrink group p-8 rounded-[24px] bg-white/70 backdrop-blur-xl border border-brand-gold/20 hover:border-brand-gold hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-gold/15 transition-all duration-500 flex flex-col items-start gap-5 h-full relative overflow-hidden">
+          <div class="absolute -right-6 -top-6 text-brand-dark/5 text-9xl group-hover:scale-110 transition-transform duration-700 pointer-events-none">
+            <i class="fa-solid fa-house-chimney-heart"></i>
+          </div>
+          <div class="w-16 h-16 rounded-2xl bg-brand-red/10 flex items-center justify-center text-brand-red text-3xl transition-all duration-300 group-hover:scale-110 shadow-sm relative z-10">
+            <i class="fa-solid fa-house-chimney-user"></i>
+          </div>
+          <h3 class="text-xl font-bold text-brand-dark font-poppins relative z-10">Family-Focused Approach</h3>
+          <p class="text-slate-500 text-sm leading-relaxed font-outfit relative z-10">
+            A platform built to help families and individuals participate confidently in the matchmaking journey.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Highlight Section -->
+      <div class="mt-12 pt-8 border-t border-brand-gold/25 relative w-full overflow-hidden py-2">
+        <div class="absolute inset-y-0 left-0 w-12 md:w-24 bg-gradient-to-r from-[#FDECD2] to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-[#FDECD2] to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="flex w-max animate-marquee hover:[animation-play-state:paused]">
+          <!-- Group 1 -->
+          <div class="flex items-center gap-6 md:gap-10 pr-6 md:pr-10 text-sm font-bold text-slate-700 font-outfit">
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Verified Members</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Privacy First</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Community Matching</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Family-Oriented Platform</span>
+            </div>
+          </div>
+          <!-- Group 2 -->
+          <div class="flex items-center gap-6 md:gap-10 pr-6 md:pr-10 text-sm font-bold text-slate-700 font-outfit">
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Verified Members</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Privacy First</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Community Matching</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Family-Oriented Platform</span>
+            </div>
+          </div>
+          <!-- Group 3 -->
+          <div class="flex items-center gap-6 md:gap-10 pr-6 md:pr-10 text-sm font-bold text-slate-700 font-outfit">
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Verified Members</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Privacy First</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Community Matching</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Family-Oriented Platform</span>
+            </div>
+          </div>
+          <!-- Group 4 -->
+          <div class="flex items-center gap-6 md:gap-10 pr-6 md:pr-10 text-sm font-bold text-slate-700 font-outfit">
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Verified Members</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Privacy First</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Community Matching</span>
+            </div>
+            <div class="flex items-center gap-2 whitespace-nowrap">
+              <span class="w-6 h-6 rounded-full bg-brand-dark/10 text-brand-dark flex items-center justify-center text-xs"><i class="fa-solid fa-check"></i></span>
+              <span>Family-Oriented Platform</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 4 - TELUGU BRIDES
+       ========================================== -->
+  <section id="brides-section" class="py-12 md:py-16 bg-[#FDECD2] relative overflow-hidden border-t border-[#FDECD2]">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+        <div class="space-y-4 text-center md:text-left">
+          <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-brand-red/10 border border-brand-red/25 text-brand-red text-xs md:text-sm font-extrabold uppercase tracking-widest font-poppins mb-2">
+            ✨ Featured Brides
+          </div>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark font-poppins">
+            Featured <span class="text-brand-red">Telugu Bride Profiles</span>
+          </h2>
+          <p class="text-slate-600 text-xs md:text-sm font-outfit max-w-xl">
+            Explore verified Telugu bride profiles from diverse communities, professions, and family backgrounds.
+          </p>
+        </div>
+        <div class="flex items-center justify-center gap-3 mt-6 md:mt-0">
+          <button id="brides-prev" class="w-12 h-12 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-brand-dark flex items-center justify-center transition-all shadow-md active:scale-95" aria-label="Previous Bride Profiles">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="brides-next" class="w-12 h-12 rounded-full bg-brand-red hover:bg-brand-redHover text-white flex items-center justify-center transition-all shadow-lg shadow-brand-red/15 active:scale-95" aria-label="Next Bride Profiles">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Responsive Grid / Slider track combo -->
+      <div id="brides-container" class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth pb-6 px-1">
+        
+        <!-- Bride Card 1: Swetha -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="bride1.png" alt="Telugu Bride Portrait" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Swetha, 24</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Hyderabad • Reddy</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> B.Tech Computer Science</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Software Engineer</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Bride Card 2: Anusha -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="bride2.png" alt="Telugu Bride Matrimony" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Anusha, 26</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Vijayawada • Kamma</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> M.B.B.S / M.D.</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Doctor</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Bride Card 3: Keerthana -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="bride3.png" alt="Telugu speaking bride" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Keerthana, 25</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Bangalore • Brahmin</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> Chartered Accountant (CA)</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Chartered Accountant</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Bride Card 4: Divya -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="bride4.png" alt="South Indian Telugu Bride" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Divya, 27</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Chennai • Arya Vysya</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> MBA Finance</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Business Analyst</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+        
+        <!-- Bride Card 5: Swetha (Duplicate for Carousel) -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="bride1.png" alt="Telugu Bride Portrait" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Swetha, 24</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Hyderabad • Reddy</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> B.Tech Computer Science</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Software Engineer</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Bride Card 6: Anusha (Duplicate for Carousel) -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="bride2.png" alt="Telugu Bride Matrimony" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Anusha, 26</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Vijayawada • Kamma</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> M.B.B.S / M.D.</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Doctor</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Bride Card 7: Keerthana (Duplicate for Carousel) -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="bride3.png" alt="Telugu speaking bride" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Keerthana, 25</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Bangalore • Brahmin</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> Chartered Accountant (CA)</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Chartered Accountant</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Bride Card 8: Divya (Duplicate for Carousel) -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="bride4.png" alt="South Indian Telugu Bride" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Divya, 27</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Chennai • Arya Vysya</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> MBA Finance</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Business Analyst</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="mt-8 text-center">
+        <a href="#register" class="inline-flex items-center gap-2 font-bold text-brand-red hover:text-brand-redHover transition-colors text-sm md:text-base font-poppins group">
+          View All Telugu Bride Profiles <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 5 - TELUGU GROOMS
+       ========================================== -->
+  <section id="grooms-section" class="py-12 md:py-16 bg-white relative overflow-hidden border-t border-slate-100">
+    <!-- Decorative background elements for glassmorphism effect -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-gold/20 rounded-full blur-3xl z-0 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl z-0 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+        <div class="space-y-4 text-center md:text-left">
+          <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-brand-red/10 border border-brand-red/25 text-brand-red text-xs md:text-sm font-extrabold uppercase tracking-widest font-poppins mb-2">
+            ✨ Featured Grooms
+          </div>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark font-poppins">
+            Featured <span class="text-brand-red">Telugu Groom Profiles</span>
+          </h2>
+          <p class="text-slate-600 text-xs md:text-sm font-outfit max-w-xl">
+            Browse verified Telugu groom profiles from diverse communities, professions, and family backgrounds to find a compatible life partner.
+          </p>
+        </div>
+        <div class="flex items-center justify-center gap-3 mt-6 md:mt-0">
+          <button id="grooms-prev" class="w-12 h-12 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-brand-dark flex items-center justify-center transition-all shadow-md active:scale-95" aria-label="Previous Groom Profiles">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="grooms-next" class="w-12 h-12 rounded-full bg-brand-red hover:bg-brand-redHover text-white flex items-center justify-center transition-all shadow-lg shadow-brand-red/15 active:scale-95" aria-label="Next Groom Profiles">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Responsive Grid / Slider track combo -->
+      <div id="grooms-container" class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth pb-6 px-1">
+        
+        <!-- Groom Card 1: Rahul -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="groom1.png" alt="Telugu Groom Portrait" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Rahul, 28</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Hyderabad • Reddy</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> B.Tech Computer Science</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Software Engineer</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Groom Card 2: Arjun -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="groom2.png" alt="Telugu groom matches" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Arjun, 30</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Vijayawada • Kamma</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> MBA</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Business Owner</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Groom Card 3: Vikram -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="groom3.png" alt="Telugu groom marriage partner" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Vikram, 29</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Bangalore • Brahmin</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> M.B.B.S.</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Doctor</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Groom Card 4: Sandeep -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="groom4.png" alt="Telugu Speaking Grooms" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Sandeep, 31</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Chennai • Arya Vysya</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> Chartered Accountant</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Financial Analyst</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Groom Card 5: Rahul (Duplicate for Carousel) -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="groom1.png" alt="Telugu Groom Portrait" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Rahul, 28</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Hyderabad • Reddy</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> B.Tech Computer Science</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Software Engineer</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Groom Card 6: Arjun (Duplicate for Carousel) -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="groom2.png" alt="Telugu groom matches" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Arjun, 30</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Vijayawada • Kamma</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> MBA</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Business Owner</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Groom Card 7: Vikram (Duplicate for Carousel) -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="groom3.png" alt="Telugu groom marriage partner" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Vikram, 29</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Bangalore • Brahmin</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> M.B.B.S.</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Doctor</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Groom Card 8: Sandeep (Duplicate for Carousel) -->
+        <div class="snap-center w-[290px] md:w-[320px] flex-shrink-0 bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
+          <div class="relative h-64 overflow-hidden">
+            <img src="groom4.png" alt="Telugu Speaking Grooms" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-brand-dark/95 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-shield-halved"></i> Verified
+            </div>
+          </div>
+          <div class="p-6 space-y-4 font-outfit">
+            <div>
+              <h3 class="text-xl font-bold text-brand-dark font-poppins group-hover:text-brand-red transition-colors">Sandeep, 31</h3>
+              <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mt-1 flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-red"></i> Chennai • Arya Vysya</p>
+            </div>
+            <div class="h-[1px] bg-slate-100"></div>
+            <div class="text-sm text-slate-600 space-y-2 font-medium">
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-graduation-cap text-[10px]"></i></span> Chartered Accountant</p>
+              <p class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red"><i class="fa-solid fa-briefcase text-[10px]"></i></span> Financial Analyst</p>
+            </div>
+            <button class="w-full mt-2 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white text-sm font-bold transition-all active:scale-[0.98] font-poppins shadow-md shadow-brand-red/20">
+              View Profile
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="mt-8 text-center">
+        <a href="#register" class="inline-flex items-center gap-2 font-bold text-brand-red hover:text-brand-redHover transition-colors text-sm md:text-base font-poppins group">
+          View All Telugu Groom Profiles <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 6 - SUCCESS STORIES (Gold Background #f9e6cc)
+       ========================================== -->
+  <section id="success-section" class="py-16 md:py-20 relative overflow-hidden bg-[#FDECD2]">
+    <!-- Premium wedding-themed background pattern -->
+    <div class="absolute inset-0 opacity-15 bg-repeat bg-center mix-blend-overlay z-0" style="background-image: url('pattern_bg.png'); background-size: 320px;"></div>
+    
+    <!-- Animated heart decorative elements -->
+    <div class="absolute top-20 left-10 text-brand-red/15 text-6xl animate-float pointer-events-none z-0"><i class="fa-solid fa-heart"></i></div>
+    <div class="absolute bottom-20 right-10 text-white/50 text-7xl animate-float-slow pointer-events-none z-0"><i class="fa-solid fa-heart"></i></div>
+    <div class="absolute top-1/2 right-24 text-brand-red/10 text-8xl animate-pulse pointer-events-none z-0"><i class="fa-solid fa-heart"></i></div>
+    <div class="absolute bottom-40 left-20 text-white/40 text-4xl animate-bounce pointer-events-none z-0"><i class="fa-solid fa-heart"></i></div>
+
+    <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-10 relative z-10">
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/30 border border-white/50 text-brand-dark text-xs md:text-sm font-extrabold uppercase tracking-widest font-poppins mb-6 shadow-sm backdrop-blur-md">
+          💍 Success Stories
+        </div>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark mb-6 font-poppins drop-shadow-sm">
+          Real Telugu <span class="text-brand-red drop-shadow-md">Success Stories</span>
+        </h2>
+        <p class="text-brand-dark/80 font-outfit text-xs md:text-sm font-medium leading-relaxed max-w-2xl mx-auto">
+          Discover inspiring journeys of Telugu couples who found their life partners and began a beautiful new chapter together.
+        </p>
+      </div>
+
+      <!-- Premium Testimonial Carousel -->
+      <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-8 px-2 md:px-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-visible relative z-10 max-w-7xl mx-auto items-stretch">
+        
+        <!-- Story 1 -->
+        <div class="snap-center w-[300px] md:w-[360px] lg:w-auto flex-shrink-0 flex flex-col bg-white/60 backdrop-blur-xl border border-white/60 rounded-[32px] p-6 md:p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+          <!-- Glassmorphism decorative graphic -->
+          <i class="fa-solid fa-heart absolute -bottom-10 -right-10 text-[180px] text-white/40 group-hover:scale-110 transition-transform duration-700 pointer-events-none z-0"></i>
+          
+          <div class="w-full h-64 rounded-2xl overflow-hidden relative shadow-md mb-6 flex-shrink-0 z-10 border-[6px] border-white/90">
+            <img src="testimonial 1.png" alt="Telugu Marriage Success Match" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute top-3 left-3 bg-brand-red/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-[10px] font-bold text-white flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-ring"></i> Married 2023
+            </div>
+          </div>
+          <div class="space-y-4 flex flex-col flex-grow z-10">
+            <div class="relative">
+              <div class="absolute -top-3 -left-2 text-brand-red text-5xl opacity-50 font-serif leading-none">"</div>
+              <p class="text-sm text-slate-700 leading-relaxed font-outfit italic relative z-10 pt-2 px-2 font-medium">
+                "We connected through the platform, discovered shared values and family traditions, and knew we were meant for each other. Today, we're happily married and grateful for this journey."
+              </p>
+            </div>
+            <div class="pt-5 border-t border-slate-100 mt-auto">
+              <span class="text-lg font-bold text-brand-dark font-poppins block group-hover:translate-x-1 transition-transform">Priya & Karthik</span>
+              <span class="text-[10px] text-slate-600 font-bold block uppercase tracking-wider mt-1 flex items-center gap-1"><i class="fa-solid fa-location-dot text-brand-red/70"></i> Hyderabad • Reddy</span>
+            </div>
+            <a href="#" class="mt-3 inline-flex items-center gap-2 text-xs font-bold text-brand-red hover:text-brand-redHover transition-colors font-poppins group/btn">
+              Read Their Story <i class="fa-solid fa-arrow-right group-hover/btn:translate-x-1 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="snap-center w-[300px] md:w-[360px] lg:w-auto flex-shrink-0 flex flex-col bg-white/60 backdrop-blur-xl border border-white/60 rounded-[32px] p-6 md:p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden mt-0 lg:mt-6">
+          <!-- Glassmorphism decorative graphic -->
+          <i class="fa-solid fa-heart absolute -bottom-10 -right-10 text-[180px] text-white/40 group-hover:scale-110 transition-transform duration-700 pointer-events-none z-0"></i>
+          
+          <div class="w-full h-64 rounded-2xl overflow-hidden relative shadow-md mb-6 flex-shrink-0 z-10 border-[6px] border-white/90">
+            <img src="testimonial 2.png" alt="Telugu Wedding Success Story" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute top-3 left-3 bg-brand-red/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-[10px] font-bold text-white flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-ring"></i> Married 2022
+            </div>
+          </div>
+          <div class="space-y-4 flex flex-col flex-grow z-10">
+            <div class="relative">
+              <div class="absolute -top-3 -left-2 text-brand-red text-5xl opacity-50 font-serif leading-none">"</div>
+              <p class="text-sm text-slate-700 leading-relaxed font-outfit italic relative z-10 pt-2 px-2 font-medium">
+                "Finding someone who understood our culture and family values was important to us. We found exactly that and started our forever together."
+              </p>
+            </div>
+            <div class="pt-5 border-t border-slate-100 mt-auto">
+              <span class="text-lg font-bold text-brand-dark font-poppins block group-hover:translate-x-1 transition-transform">Anusha & Rahul</span>
+              <span class="text-[10px] text-slate-600 font-bold block uppercase tracking-wider mt-1 flex items-center gap-1"><i class="fa-solid fa-location-dot text-brand-red/70"></i> Bangalore • Kamma</span>
+            </div>
+            <a href="#" class="mt-3 inline-flex items-center gap-2 text-xs font-bold text-brand-red hover:text-brand-redHover transition-colors font-poppins group/btn">
+              Read Their Story <i class="fa-solid fa-arrow-right group-hover/btn:translate-x-1 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="snap-center w-[300px] md:w-[360px] lg:w-auto flex-shrink-0 flex flex-col bg-white/60 backdrop-blur-xl border border-white/60 rounded-[32px] p-6 md:p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+          <!-- Glassmorphism decorative graphic -->
+          <i class="fa-solid fa-heart absolute -bottom-10 -right-10 text-[180px] text-white/40 group-hover:scale-110 transition-transform duration-700 pointer-events-none z-0"></i>
+          
+          <div class="w-full h-64 rounded-2xl overflow-hidden relative shadow-md mb-6 flex-shrink-0 z-10 border-[6px] border-white/90">
+            <img src="testimonial 3.png" alt="Telugu NRI Match Story" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute top-3 left-3 bg-brand-red/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-[10px] font-bold text-white flex items-center gap-1.5 shadow-md">
+              <i class="fa-solid fa-ring"></i> Married 2024
+            </div>
+          </div>
+          <div class="space-y-4 flex flex-col flex-grow z-10">
+            <div class="relative">
+              <div class="absolute -top-3 -left-2 text-brand-red text-5xl opacity-50 font-serif leading-none">"</div>
+              <p class="text-sm text-slate-700 leading-relaxed font-outfit italic relative z-10 pt-2 px-2 font-medium">
+                "Our families connected instantly, and everything felt natural from the beginning. It was the perfect match."
+              </p>
+            </div>
+            <div class="pt-5 border-t border-slate-100 mt-auto">
+              <span class="text-lg font-bold text-brand-dark font-poppins block group-hover:translate-x-1 transition-transform">Divya & Arjun</span>
+              <span class="text-[10px] text-slate-600 font-bold block uppercase tracking-wider mt-1 flex items-center gap-1"><i class="fa-solid fa-location-dot text-brand-red/70"></i> Vijayawada • Brahmin</span>
+            </div>
+            <a href="#" class="mt-3 inline-flex items-center gap-2 text-xs font-bold text-brand-red hover:text-brand-redHover transition-colors font-poppins group/btn">
+              Read Their Story <i class="fa-solid fa-arrow-right group-hover/btn:translate-x-1 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Highlight & CTA -->
+      <div class="mt-10 text-center relative z-10 space-y-6">
+        <div class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/70 backdrop-blur-md shadow-sm border border-white/80 text-brand-dark text-sm md:text-base font-bold font-poppins">
+          ❤️ Thousands of Telugu Families Have Found Their Perfect Match
+        </div>
+        <div>
+          <a href="#share-story" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-brand-red hover:bg-brand-redHover text-white font-extrabold text-sm transition-all duration-300 shadow-xl shadow-brand-red/20 active:scale-95 font-poppins">
+            Share Your Success Story <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ==========================================
+       SECTION 9 - MOBILE APP
+       ========================================== -->
+  <section id="app-section" class="py-12 md:py-16 bg-white relative overflow-hidden border-t border-slate-100">
+    <!-- Overlay patterns -->
+    <div class="absolute top-0 right-0 w-80 h-80 bg-brand-gold/5 rounded-full blur-3xl -z-10"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl -z-10"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- App Details -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark leading-tight animate-pulse-slow font-poppins">
+            Find Matches <br class="hidden md:inline">
+            <span class="text-brand-red">Anytime, Anywhere</span>
+          </h2>
+          <div class="w-24 h-1 bg-brand-red mx-auto lg:mx-0 rounded-full"></div>
+          
+          <p class="text-slate-600 font-outfit text-xs md:text-sm leading-relaxed max-w-xl mx-auto lg:mx-0">
+            Download the Kalyan Matrimony mobile app to browse profiles, receive instant match notifications, view photo requests, and chat securely on the go.
+          </p>
+
+          <!-- Download Stats -->
+          <div class="grid grid-cols-3 gap-6 py-6 border-y border-brand-dark/10 max-w-lg mx-auto lg:mx-0">
+            <div class="space-y-1">
+              <div class="text-2xl md:text-3xl font-extrabold text-brand-red">500K+</div>
+              <div class="text-[10px] md:text-xs font-semibold text-slate-500 uppercase">Active Users</div>
+            </div>
+            <div class="space-y-1">
+              <div class="text-2xl md:text-3xl font-extrabold text-brand-red font-poppins">4.8 <i class="fa-solid fa-star text-sm md:text-lg"></i></div>
+              <div class="text-[10px] md:text-xs font-semibold text-slate-500 uppercase">App Rating</div>
+            </div>
+            <div class="space-y-1">
+              <div class="text-2xl md:text-3xl font-extrabold text-brand-dark">10M+</div>
+              <div class="text-[10px] md:text-xs font-semibold text-slate-500 uppercase">Daily Swipes</div>
+            </div>
+          </div>
+
+          <!-- Download badges -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#" class="inline-flex items-center gap-3 bg-brand-dark text-white px-6 py-3 rounded-2xl hover:bg-black transition-colors shadow-md hover:shadow-lg">
+              <i class="fa-brands fa-apple text-2xl"></i>
+              <div class="text-left font-outfit">
+                <span class="text-[10px] block uppercase text-slate-400">Download on the</span>
+                <span class="text-sm font-bold">App Store</span>
+              </div>
+            </a>
+            
+            <a href="#" class="inline-flex items-center gap-3 bg-brand-dark text-white px-6 py-3 rounded-2xl hover:bg-black transition-colors shadow-md hover:shadow-lg">
+              <i class="fa-brands fa-google-play text-2xl text-white"></i>
+              <div class="text-left font-outfit">
+                <span class="text-[10px] block uppercase text-slate-400">Get it on</span>
+                <span class="text-sm font-bold">Google Play</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mockup Visual -->
+        <div class="lg:col-span-5 relative flex justify-center items-center h-[520px] md:h-[580px]">
+          <!-- Mock Phone container -->
+          <div class="relative w-[240px] md:w-[280px] h-[450px] md:h-[500px] rounded-[36px] border-[10px] border-brand-dark bg-white overflow-hidden shadow-2xl z-10" id="app-mockup-img">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-brand-dark rounded-b-2xl z-30"></div>
+            
+            <div class="w-full h-full flex flex-col pt-8">
+              <div class="px-4 py-2 border-b border-slate-100 flex items-center justify-between bg-brand-roseLight">
+                <img src="logo.png" alt="App Logo" class="h-6 object-contain">
+                <i class="fa-solid fa-bell text-brand-red"></i>
+              </div>
+              <div class="flex-1 p-3 space-y-3 bg-slate-50 overflow-y-auto no-scrollbar font-outfit">
+                <div class="rounded-xl overflow-hidden bg-white border border-slate-100 shadow-sm">
+                  <div class="h-32 bg-slate-200 relative">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover">
+                  </div>
+                  <div class="p-3">
+                    <div class="flex justify-between items-center">
+                      <span class="text-xs font-bold text-brand-dark">Swetha R., 24</span>
+                      <span class="text-[10px] bg-brand-red/10 text-brand-red px-1.5 py-0.5 rounded font-extrabold">98% Match</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="rounded-xl overflow-hidden bg-white border border-slate-100 shadow-sm">
+                  <div class="h-32 bg-slate-200 relative">
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover">
+                  </div>
+                  <div class="p-3">
+                    <div class="flex justify-between items-center">
+                      <span class="text-xs font-bold text-brand-dark">Sravani B., 26</span>
+                      <span class="text-[10px] bg-brand-red/10 text-brand-red px-1.5 py-0.5 rounded font-extrabold">94% Match</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Notification Bubble 1 -->
+          <div class="app-float-notif absolute top-12 left-0 md:-left-8 bg-brand-red text-white p-3 rounded-2xl shadow-xl z-20 max-w-[180px] md:max-w-[210px] flex items-center gap-2 border border-brand-gold/30">
+            <i class="fa-solid fa-heart text-white animate-pulse text-lg flex-shrink-0"></i>
+            <div class="text-[10px] font-outfit font-semibold">
+              <span class="block font-bold">New Liked Profile</span>
+              Anitha liked your photo request!
+            </div>
+          </div>
+
+          <!-- Floating Notification Bubble 2 -->
+          <div class="app-float-notif absolute bottom-24 right-0 md:-right-8 bg-white text-slate-800 p-3 rounded-2xl shadow-xl z-20 max-w-[180px] md:max-w-[210px] flex items-center gap-2 border border-slate-100">
+            <i class="fa-solid fa-circle-check text-brand-red text-lg flex-shrink-0 animate-bounce"></i>
+            <div class="text-[10px] font-outfit font-semibold">
+              <span class="block font-bold text-brand-red">Match Verified</span>
+              Kiran's ID has been verified.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 10 - FAQ
+       ========================================== -->
+  <section id="faq-section" class="py-12 md:py-16 bg-[#FDECD2] relative border-t border-[#FDECD2]">
+    <div class="max-w-4xl mx-auto px-4 md:px-8">
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark mb-4 font-poppins">
+          Frequently Asked Questions
+        </h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto mb-6 rounded-full"></div>
+        <p class="text-slate-600 font-outfit text-xs md:text-sm">
+          Get answers to common queries regarding profile creation, verification levels, and matching capabilities.
+        </p>
+      </div>
+
+      <!-- Accordion -->
+      <div class="space-y-4 font-outfit">
+        
+        <!-- Item 1 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-slate-100 overflow-hidden transition-all duration-300">
+          <button class="faq-header w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+            <span class="text-base md:text-lg font-bold text-brand-dark font-poppins">How do I register on Kalyan Telugu Matrimony?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-brand-red transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content h-0 opacity-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 text-sm text-slate-500 leading-relaxed">
+              Registration is quick and free. Click on "Register Free" button, fill in basic details (age, community, height, educational details), upload your photo, and add verification documents. Once checked by our verification team, your profile goes live.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-slate-100 overflow-hidden transition-all duration-300">
+          <button class="faq-header w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+            <span class="text-base md:text-lg font-bold text-brand-dark font-poppins">Are all Telugu brides and grooms profiles verified?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-brand-red transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content h-0 opacity-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 text-sm text-slate-500 leading-relaxed">
+              Yes, profile verification is a priority. We verify profiles by checking phone numbers, government ID documents, and educational certificates. Verified profiles feature a sage green "Verified Checkmark" badge.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-slate-100 overflow-hidden transition-all duration-300">
+          <button class="faq-header w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+            <span class="text-base md:text-lg font-bold text-brand-dark font-poppins">Can I search profiles by community and sub-caste?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-brand-red transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content h-0 opacity-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 text-sm text-slate-500 leading-relaxed">
+              Absolutely. Our search system supports specific filters for Telugu communities including Reddy, Kamma, Kapu, Velama, Naidu, Balija, Arya Vysya, Mudiraj, and Yadava sub-sects. You can filter based on Gothram and location.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-slate-100 overflow-hidden transition-all duration-300">
+          <button class="faq-header w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+            <span class="text-base md:text-lg font-bold text-brand-dark font-poppins">Is my personal information secure on the platform?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-brand-red transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content h-0 opacity-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 text-sm text-slate-500 leading-relaxed">
+              Yes, security is a core priority. We use secure databases to protect details. You can customize settings to limit who can view your photo, phone numbers, and horoscope details.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-slate-100 overflow-hidden transition-all duration-300">
+          <button class="faq-header w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+            <span class="text-base md:text-lg font-bold text-brand-dark font-poppins">How do I initiate contact with matching profiles?</span>
+            <i class="faq-icon fa-solid fa-chevron-down text-brand-red transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content h-0 opacity-0 overflow-hidden transition-all duration-300">
+            <div class="px-6 pb-5 text-sm text-slate-500 leading-relaxed">
+              Once you find a profile you like, send a Connection Request. When the recipient approves, you can message and call securely using our call systems without exposing phone numbers.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SECTION 12 - CONTACT US
+       ========================================== -->
+  <section id="contact-section" class="py-12 md:py-16 bg-[#FDECD2] relative border-t border-[#FDECD2]">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-brand-dark mb-4 font-poppins">
+          Get in Touch With Us
+        </h2>
+        <div class="w-24 h-1 bg-brand-red mx-auto mb-6 rounded-full"></div>
+        <p class="text-slate-600 font-outfit text-xs md:text-sm">
+          Have questions about our premium matchmaking services? We are here to help you find your perfect Telugu life partner.
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto">
+        <!-- Contact Form -->
+        <form action="#" method="POST" class="bg-white p-8 rounded-3xl border border-slate-100 shadow-lg">
+          <div class="space-y-5 font-outfit">
+            <div>
+              <label for="contact-name" class="block text-xs font-bold text-brand-dark mb-1">Full Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Enter your full name" class="w-full h-12 px-4 bg-slate-50 border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium shadow-sm" required>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label for="contact-phone" class="block text-xs font-bold text-brand-dark mb-1">Mobile Number</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="Enter mobile number" class="w-full h-12 px-4 bg-slate-50 border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium shadow-sm" required>
+              </div>
+              <div>
+                <label for="contact-email" class="block text-xs font-bold text-brand-dark mb-1">Email Address</label>
+                <input type="email" id="contact-email" name="email" placeholder="Enter email address" class="w-full h-12 px-4 bg-slate-50 border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium shadow-sm" required>
+              </div>
+            </div>
+            <div>
+              <label for="contact-message" class="block text-xs font-bold text-brand-dark mb-1">Message</label>
+              <textarea id="contact-message" name="message" placeholder="How can we help you?" class="w-full h-28 p-4 bg-slate-50 border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium shadow-sm resize-none" required></textarea>
+            </div>
+            <button type="submit" class="w-full h-12 bg-brand-red hover:bg-brand-redHover text-white font-extrabold rounded-full transition-all shadow-lg shadow-brand-red/20 flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="bg-brand-dark/95 text-slate-400 text-sm py-12 border-t border-brand-gold/15 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      
+      <!-- Footer Columns -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 pb-8 border-b border-slate-800">
+        
+        <!-- Col 1: About -->
+        <div class="lg:col-span-4 space-y-4 text-center sm:text-left">
+          <img src="logo.png" alt="Kalyan Matrimony Footer Logo" class="h-12 object-contain mx-auto sm:mx-0 filter brightness-110">
+          <p class="text-xs text-slate-500 font-outfit leading-relaxed max-w-sm">
+            Kalyan Matrimony is a premium matrimonial platform providing matching and verification processes to Telugu brides and grooms globally.
+          </p>
+          <div class="flex items-center justify-center sm:justify-start gap-4 text-lg pt-2">
+            <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-brand-red text-white flex items-center justify-center transition-colors" aria-label="Facebook Link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-brand-red text-white flex items-center justify-center transition-colors" aria-label="Twitter Link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-brand-red text-white flex items-center justify-center transition-colors" aria-label="Instagram Link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-brand-red text-white flex items-center justify-center transition-colors" aria-label="Youtube Link"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="lg:col-span-2 space-y-4 text-center sm:text-left">
+          <h4 class="text-white font-bold tracking-wider uppercase text-xs font-poppins">Quick Links</h4>
+          <ul class="space-y-2.5 font-outfit text-xs">
+            <li><a href="#brides-section" class="hover:text-brand-red transition-colors">Telugu Brides</a></li>
+            <li><a href="#grooms-section" class="hover:text-brand-red transition-colors">Telugu Grooms</a></li>
+            <li><a href="#success-section" class="hover:text-brand-red transition-colors">Success Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Communities -->
+        <div class="lg:col-span-3 space-y-4 text-center sm:text-left">
+          <h4 class="text-white font-bold tracking-wider uppercase text-xs font-poppins">Popular Communities</h4>
+          <div class="grid grid-cols-2 gap-2 font-outfit text-xs">
+            <ul class="space-y-2.5">
+              <li><a href="/reddy" class="hover:text-brand-red transition-colors">Reddy</a></li>
+              <li><a href="/kamma" class="hover:text-brand-red transition-colors">Kamma</a></li>
+              <li><a href="/kapu" class="hover:text-brand-red transition-colors">Kapu</a></li>
+              <li><a href="/velama" class="hover:text-brand-red transition-colors">Velama</a></li>
+              <li><a href="/naidu" class="hover:text-brand-red transition-colors">Naidu</a></li>
+            </ul>
+            <ul class="space-y-2.5">
+              <li><a href="/balija" class="hover:text-brand-red transition-colors">Balija</a></li>
+              <li><a href="/arya-vysya" class="hover:text-brand-red transition-colors">Arya Vysya</a></li>
+              <li><a href="/mudiraj" class="hover:text-brand-red transition-colors">Mudiraj</a></li>
+              <li><a href="/yadava" class="hover:text-brand-red transition-colors">Yadava</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Col 4: Support -->
+        <div class="lg:col-span-3 space-y-4 text-center sm:text-left">
+          <h4 class="text-white font-bold tracking-wider uppercase text-xs font-poppins">Support</h4>
+          <ul class="space-y-2.5 font-outfit text-xs">
+            <li><a href="#" class="hover:text-brand-red transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-brand-red transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-brand-red transition-colors">Terms of Service</a></li>
+            <li><a href="#faq-section" class="hover:text-brand-red transition-colors">Help Center / FAQ</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-xs text-slate-500 text-center md:text-left font-outfit">
+          &copy; 2026 Kalyan Matrimony. All Rights Reserved. Designed with premium Telugu wedding traditions.
+        </div>
+        
+        <!-- Trust Badges -->
+        <div class="flex items-center gap-4">
+          <span class="text-xs text-slate-600 font-bold uppercase tracking-wider hidden sm:inline">Secured by:</span>
+          <div class="flex items-center gap-3 opacity-60">
+            <i class="fa-solid fa-lock text-white text-base"></i>
+            <span class="text-xs text-white font-bold font-outfit">SSL Secure</span>
+            <div class="h-4 w-[1px] bg-slate-700"></div>
+            <i class="fa-solid fa-shield-halved text-brand-red text-base"></i>
+            <span class="text-xs text-white font-bold font-outfit">PCI Verified</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 w-14 h-14 bg-brand-dark text-white rounded-full flex items-center justify-center text-3xl shadow-[0_8px_30px_rgb(0,0,0,0.3)] hover:scale-110 hover:bg-brand-red transition-all duration-300 z-50" aria-label="Chat with us on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================
+       POPUP MODAL (WhatsApp Lead Generation)
+       ========================================== -->
+  <div id="lead-popup" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-brand-dark/80 backdrop-blur-sm transition-opacity opacity-0" id="lead-popup-backdrop"></div>
+    
+    <!-- Modal Content -->
+    <div class="bg-white rounded-3xl shadow-2xl w-full max-w-md relative z-10 transform scale-95 opacity-0 transition-all duration-300 overflow-hidden border border-brand-red/10" id="lead-popup-content">
+      <!-- Close Button -->
+      <button id="close-popup-btn" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 hover:bg-brand-red hover:text-white text-slate-500 transition-colors z-20" aria-label="Close Popup">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <!-- Header -->
+      <div class="bg-[#FDECD2] p-6 text-center border-b border-brand-red/10 pt-8">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-red/10 text-brand-red text-[10px] font-extrabold uppercase tracking-widest font-poppins mb-3">
+          Wait! Don't Leave Yet ✦
+        </div>
+        <h3 class="text-xl md:text-2xl font-extrabold text-brand-dark font-poppins leading-tight">Get personalized matches sent to your WhatsApp instantly</h3>
+      </div>
+      
+      <!-- Form -->
+      <div class="p-6">
+        <form id="whatsapp-lead-form" class="space-y-4 font-outfit" onsubmit="event.preventDefault(); alert('Request sent to WhatsApp!');">
+          <div>
+            <label class="block text-xs font-bold text-slate-500 mb-1">Your Name</label>
+            <input type="text" placeholder="Enter your name" class="w-full h-11 px-4 bg-slate-50 border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium" required>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-500 mb-1">Your Mobile Number</label>
+            <div class="flex">
+              <div class="h-11 px-3 bg-slate-100 border border-slate-200 rounded-l-xl border-r-0 flex items-center justify-center text-xs text-brand-dark font-extrabold whitespace-nowrap">
+                🇮🇳 +91
+              </div>
+              <input type="tel" placeholder="98765 43210" class="w-full h-11 px-4 bg-slate-50 border border-slate-200 rounded-r-xl focus:border-brand-red outline-none text-brand-dark font-medium tracking-wider" required>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-500 mb-1">Looking For</label>
+              <select class="w-full h-11 px-3 bg-slate-50 border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium" required>
+                <option value="" disabled selected>Select...</option>
+                <option value="bride">Bride</option>
+                <option value="groom">Groom</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-500 mb-1">Mother Tongue</label>
+              <select class="w-full h-11 px-3 bg-slate-50 border border-slate-200 rounded-xl focus:border-brand-red outline-none text-brand-dark font-medium" required>
+                <option value="" disabled selected>Select...</option>
+                <option value="telugu">Telugu</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="w-full h-12 bg-brand-red hover:bg-brand-redHover text-white font-extrabold rounded-full transition-all shadow-lg shadow-brand-red/20 flex items-center justify-center gap-2 mt-4 text-sm font-poppins active:scale-95">
+            <i class="fa-brands fa-whatsapp text-xl"></i> Get Matches via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SCRIPTS (GSAP, ScrollTrigger, app.js)
+       ========================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

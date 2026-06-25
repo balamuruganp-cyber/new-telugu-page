@@ -1,0 +1,205 @@
+/* premium-telugu.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-red: #B30D13;
+  --primary-red-rgb: 179, 13, 19;
+  --secondary-gold: #f9e6cc;
+  --secondary-gold-rgb: 249, 230, 204;
+  --tertiary-green: #6B8C5A;
+  --tertiary-green-rgb: 107, 140, 90;
+  
+  --dark-crimson: #5C0003;
+  --bg-cream: #FCF9F6;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+/* Base resets & styles */
+body {
+  font-family: var(--font-outfit);
+  background-color: #ffffff; /* site full background color is white */
+  color: #2D1A1C;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif, .font-poppins {
+  font-family: var(--font-poppins) !important;
+}
+
+/* Glassmorphism helper */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-card-dark {
+  background: rgba(92, 0, 3, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(249, 230, 204, 0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-red);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-crimson);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Keyframe Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-3deg);
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(249, 230, 204, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(249, 230, 204, 0);
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s infinite;
+}
+
+.animate-heartbeat {
+  animation: heartbeat 2s infinite;
+}
+
+/* Glow Border & Lift Hover Effects */
+.glow-hover {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.glow-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(179, 13, 19, 0.12), 0 0 15px rgba(249, 230, 204, 0.25);
+  border-color: rgba(249, 230, 204, 0.5);
+}
+
+/* Active Timeline Styles */
+.timeline-dot {
+  position: relative;
+  z-index: 10;
+}
+
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  border: 1px dashed var(--secondary-gold);
+  animation: rotate-dash 20s linear infinite;
+}
+
+@keyframes rotate-dash {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Particles styling */
+.love-particle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0.8;
+  animation: ascend-fade linear forwards;
+}
+
+@keyframes ascend-fade {
+  0% {
+    transform: translateY(100vh) scale(0.3) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Hero Custom Pattern Background */
+.hero-custom-bg {
+  background-color: #f9e6cc;
+  background-image: url('hero_pattern.png');
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+/* Telugu Mango Leaf & Marigold Toran Border */
+.toran-border {
+  height: 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 20'><path d='M0,0 Q10,18 20,18 Q30,18 40,0 L40,0 L0,0 Z' fill='%236B8C5A'/><circle cx='20' cy='3' r='3' fill='%23B30D13'/></svg>");
+  background-repeat: repeat-x;
+  background-size: 45px 20px;
+}
