@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // FAQ Accordion Interactions
   initFaqAccordion();
 
-  // Stats Slider for Mobile
-  initStatsSlider();
+  // Trust Cards Accordion Interactions
+  initTrustCardsAccordion();
 
 });
 
@@ -353,68 +353,64 @@ function initFaqAccordion() {
   });
 }
 
+
 /* ==========================================================================
-   9. Mobile Stats Carousel Auto-Slider
-   ========================================================================== */
-function initStatsSlider() {
-  const container = document.getElementById('stats-slider-container');
-  if (!container) return;
+   Trust Cards Accordion Interactions (Mobile only)
+   ========================================================================= */
+function initTrustCardsAccordion() {
+  const cards = document.querySelectorAll('.trust-card-item');
+  if (!cards.length) return;
 
-  let isMobile = window.innerWidth < 768;
-  let intervalId = null;
-  let currentIndex = 0;
-  const itemsCount = 4;
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      // Only run accordion on mobile (window width < 640px)
+      if (window.innerWidth >= 640) return;
 
-  function startAutoSlide() {
-    if (intervalId) clearInterval(intervalId);
-    intervalId = setInterval(() => {
-      if (!isMobile) return;
-      
-      currentIndex = (currentIndex + 1) % itemsCount;
-      const scrollWidth = container.clientWidth;
-      
-      container.scrollTo({
-        left: currentIndex * scrollWidth,
-        behavior: 'smooth'
+      const desc = card.querySelector('.trust-card-desc');
+      const isOpen = card.classList.contains('active');
+
+      // Close other cards
+      cards.forEach(otherCard => {
+        if (otherCard !== card && otherCard.classList.contains('active')) {
+          otherCard.classList.remove('active');
+          const otherDesc = otherCard.querySelector('.trust-card-desc');
+          if (otherDesc) {
+            gsap.to(otherDesc, { height: 0, opacity: 0, duration: 0.25, ease: 'power2.out' });
+          }
+        }
       });
-    }, 3000); // Slide every 3 seconds
-  }
 
-  function stopAutoSlide() {
-    if (intervalId) {
-      clearInterval(intervalId);
-      intervalId = null;
-    }
-  }
+      if (isOpen) {
+        card.classList.remove('active');
+        if (desc) {
+          gsap.to(desc, { height: 0, opacity: 0, duration: 0.25, ease: 'power2.out' });
+        }
+      } else {
+        card.classList.add('active');
+        if (desc) {
+          // Get natural height of description
+          gsap.set(desc, { height: 'auto', opacity: 1 });
+          const naturalHeight = desc.scrollHeight;
+          gsap.set(desc, { height: 0, opacity: 0 });
 
-  // Track manual scrolls to update slide index correctly
-  container.addEventListener('scroll', () => {
-    if (!isMobile) return;
-    const scrollWidth = container.clientWidth;
-    if (scrollWidth > 0) {
-      currentIndex = Math.round(container.scrollLeft / scrollWidth);
-    }
+          gsap.to(desc, { height: naturalHeight, opacity: 1, duration: 0.3, ease: 'power2.out' });
+        }
+      }
+    });
   });
 
-  // Handle window resizing (enable/disable slider dynamically)
+  // Handle window resizing: reset accordion styles when resizing to desktop
   window.addEventListener('resize', () => {
-    const wasMobile = isMobile;
-    isMobile = window.innerWidth < 768;
-    if (isMobile && !wasMobile) {
-      startAutoSlide();
-    } else if (!isMobile && wasMobile) {
-      stopAutoSlide();
-      container.scrollTo({ left: 0 }); // Reset position on desktop
+    if (window.innerWidth >= 640) {
+      cards.forEach(card => {
+        card.classList.remove('active');
+        const desc = card.querySelector('.trust-card-desc');
+        if (desc) {
+          gsap.set(desc, { clearProps: 'all' });
+        }
+      });
     }
   });
-
-  // Initialize auto sliding on mobile
-  if (isMobile) {
-    startAutoSlide();
-  }
-
-  // Pause on manual touch, resume when touch ends
-  container.addEventListener('touchstart', stopAutoSlide);
-  container.addEventListener('touchend', startAutoSlide);
 }
+
 
